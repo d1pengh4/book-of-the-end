@@ -1,23 +1,24 @@
 {
   "name": "book-of-the-end",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "tsc --noEmit"
+  "version": "1.1.0",
+  "description": "Book of the End — AI 독서 플랫폼 데모 (설계서 v2.0 구현)",
+  "directories": {
+    "test": "test"
   },
-  "engines": { "node": ">=20" },
-  "dependencies": {
-    "next": "^16.3.8",
-    "react": "^19.3.0",
-    "react-dom": "^19.3.0"
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "build": "node build.mjs",
+    "test:e2e": "node test/e2e.mjs"
   },
   "devDependencies": {
-    "@types/node": "^26.6.3",
-    "@types/react": "^19.3.0",
-    "@types/react-dom": "^19.3.0",
-    "typescript": "^5.9.3"
+    "playwright": "^1.56.1"
+  },
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "esbuild": "^0.24.0"
   }
 }
